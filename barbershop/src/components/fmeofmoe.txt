@@ -1,0 +1,22 @@
+<div className='lg:w-4/5 lg:bg-myHeaderColor lg:rounded-md lg:pt-4 lg:pb-4 lg:mt-10'>
+        <nav>
+            <ul className='flex items-center justify-evenly'>
+                <div className='flex text-2xl'>
+                    <li className='text-white mr-10'><Link to="/domov">DOMOV</Link></li>
+                    <li className='text-white mr-10'><Link to="/o-nás">O NÁS</Link></li>
+                    <li className='text-white'><Link to="/cenník">CENNÍK</Link></li>
+                </div>
+                <li className='text-white'><Link to="/domov"><img src={Logo} alt='logo' className='w-[260px]' /></Link></li>
+                <div className='flex text-2xl'>
+                    <li className='text-white mr-10'><Link to="/recenzie">RECENZIE</Link></li>
+                    <li className='text-white mr-10 '><Link to="/kariéra">KARIÉRA</Link></li>
+                    <li className='text-white'><Link to="/kontakt">KONTAKT</Link></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div className='relative z-10 lg:hidden'>
+                <Hamburger toggled={isOpen} toggle={setOpen} onToggle={() => setOpen(!isOpen)} color={isOpen ? "#AFA089" : "white"}/>
+            </div>
