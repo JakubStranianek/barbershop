@@ -42,7 +42,7 @@ export default function Navbar() {
         </nav>
 
         { isOpen ? 
-                <div className='w-full h-screen bg-black absolute top-0 left-0 flex items-center justify-center animate-moveFromRight'>
+                <div className='w-full h-screen bg-black absolute top-0 left-0 flex items-center justify-center delay-200 animate-'>
                     <div className='text-white flex flex-col justify-center items-center text-2xl leading-loose'>
                         <Link to="/" onClick={isOpen}>DOMOV</Link>
                         <Link to="/o-nas" onClick={isOpen}>O NÁS</Link>

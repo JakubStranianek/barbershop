@@ -1,3 +1,4 @@
+import Cennik from "./components/Cennik/Cennik";
 import Home from "./components/Home/Home";
 import Onas from "./components/ONas/Onas";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Home/>
       <Onas/>
+      <Cennik/>
     </div>
   );
 }
